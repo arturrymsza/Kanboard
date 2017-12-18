@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+
+$font: 'Lato', sans-serif;
+
+body {
+	font-family: $font;
+}
+
+
+.board {
+	.column-container {
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		align-content: stretch;
+
+		.column {
+			flex: 1 1 auto;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+		}
+
+		button {
+			color: white;
+			&:hover {
+				color: inherit;
+				background-color: white;
+			}
+		}
+	}
+
+	button {
+		background-color: transparent;
+		border-radius: 10px;
+		border: 2px;
+		border-style: solid;
+		font: {
+			weight: 700;
+			style: italic;
+			family: $font;
+		};
+		color: #a1a1a1;
+		cursor: pointer;
+		&:hover {
+			color: white;
+			background-color: #a1a1a1;
+		}
+	}
+
+	.create-column {
+		font-size: 20px;
+		padding: 7px;
+	}
+
+	h1 {
+		font-weight: 900;
+	}
+}
