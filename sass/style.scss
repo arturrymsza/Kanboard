@@ -6,7 +6,6 @@ body {
 	font-family: $font;
 }
 
-
 .board {
 	.column-container {
 		height: 100vh;
@@ -17,9 +16,34 @@ body {
 
 		.column {
 			flex: 1 1 auto;
+			display: flex;
+			flex-direction: column;
 			padding: 10px;
 			margin: 10px;
 			border-radius: 5px;
+
+			.col-delete {
+				order: 1;
+				align-self: flex-end;
+			}
+
+			.column-title {
+				order: 2;
+				margin-top: 0;
+			}
+
+			.add-card {
+				order: 3;
+			}
+
+			.column-card-list {
+				order: 4;
+				
+				.card {
+					display: flex;
+					flex-direction: row;
+				}
+			}
 		}
 
 		button {
