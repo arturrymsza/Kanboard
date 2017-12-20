@@ -48,7 +48,8 @@ body {
     .board .column-container .column .column-card-list {
       -webkit-box-ordinal-group: 5;
           -ms-flex-order: 4;
-              order: 4; }
+              order: 4;
+      min-height: 20vh; }
       .board .column-container .column .column-card-list .card {
         display: -webkit-box;
         display: -ms-flexbox;
